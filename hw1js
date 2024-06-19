@@ -1,0 +1,23 @@
+// dynamic date
+document.addEventListener("DOMContentLoaded", function() { //adding this line allowed the time to display because i didn't add this code right before the closing body tag
+    const timestamp = new Date();
+    const options = {
+        timeZone: 'America/Chicago',
+        year: 'numeric', // year as number
+        month: 'long',   // include the month as the long name
+        day: 'numeric'   // include the day as a number
+    };
+    document.getElementById("date").innerHTML = timestamp.toLocaleString('en-US', options); //adding options so it follows the ones i listed
+});
+
+// slider, code from w3 spaces
+document.addEventListener("DOMContentLoaded", function() {
+    var slider = document.getElementById("myslider");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value; // Display the default slider value
+
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() { //pseudocode for on keywords
+        output.innerHTML = this.value;
+    }
+});
