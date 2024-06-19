@@ -1,0 +1,74 @@
+body {
+    background-color: lightcyan;
+}
+
+img {
+    width: 650px;
+    height: 170px;
+    margin-left: 150px;
+}
+    
+.header {
+        font-family: sans-serif;
+        font-size:x-large;
+        color: rgb(43, 115, 126);
+        display: flex;
+        align-items: center;
+        padding: 10px;
+}
+
+.date {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.centered-form {
+    background-color: rgb(248, 248, 248);
+    font-family: sans-serif;
+    width: fit-content;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px; 
+}
+/*Adjust space between rows*/
+.form-table th,
+.form-table td {
+    align-items: center;
+    padding: 7px; 
+    white-space: nowrap;
+}
+
+/*adjust length of the address boxes*/
+.add1,
+.add2 {
+    width: 260%;
+}
+
+.textarea {
+    size-adjust: none;
+}
+
+.slider {
+    width: 100%;
+}
+.clear-button {
+    margin-left: 650px;
+}
+footer {
+    font-family: sans-serif;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: center;
+}
+
+#contact {
+    padding-left: 70px; /*adds space between clinic info*/
+}
+
