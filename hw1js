@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() { //adding this line al
     const options = {
         timeZone: 'America/Chicago',
         year: 'numeric', // year as number
-        month: 'long',   // include the month as the long name
-        day: 'numeric'   // include the day as a number
+        month: 'long',   // month as name
+        day: 'numeric'   // day as number
     };
     document.getElementById("date").innerHTML = timestamp.toLocaleString('en-US', options); //adding options so it follows the ones i listed
 });
